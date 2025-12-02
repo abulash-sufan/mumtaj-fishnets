@@ -1,0 +1,187 @@
+.contact-page {
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.contact-hero {
+    padding: var(--spacing-2xl) 0;
+    background: var(--gradient-dark);
+    text-align: center;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    background: var(--color-bg-secondary);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.contact-info-card {
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-glow);
+}
+
+.info-icon {
+    font-size: 3rem;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-info-card h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.info-link {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-fast);
+}
+
+.info-link:hover {
+    color: var(--color-accent-secondary);
+}
+
+.info-text {
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+}
+
+/* Form & Map Section */
+.form-map-section {
+    background: var(--gradient-dark);
+}
+
+.form-map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+}
+
+.form-column,
+.map-column {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.section-title {
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-description {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+/* Additional Info Section */
+.additional-info-section {
+    background: var(--color-bg-secondary);
+}
+
+.additional-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.info-box {
+    padding: var(--spacing-xl);
+}
+
+.info-box-icon {
+    font-size: 2.5rem;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.info-box h3 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+}
+
+/* Hours List */
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hours-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.time {
+    color: var(--color-accent-primary);
+    font-weight: 600;
+}
+
+/* Trade List */
+.trade-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.trade-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trade-item:last-child {
+    border-bottom: none;
+}
+
+.trade-label {
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+}
+
+.trade-value {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .form-map-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .additional-info-grid {
+        grid-template-columns: 1fr;
+    }
+}

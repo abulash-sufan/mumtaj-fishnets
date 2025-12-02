@@ -1,0 +1,206 @@
+.about {
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.about-hero {
+    padding: var(--spacing-2xl) 0;
+    background: var(--gradient-dark);
+    text-align: center;
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-md);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.page-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Story Section */
+.story-section {
+    background: var(--color-bg-secondary);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+.story-icon {
+    font-size: 5rem;
+    color: var(--color-accent-primary);
+    animation: float 3s ease-in-out infinite;
+}
+
+.story-text {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.story-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+}
+
+.story-paragraph strong {
+    color: var(--color-accent-primary);
+}
+
+.story-paragraph em {
+    color: var(--color-text-primary);
+    font-style: italic;
+}
+
+/* Mission Section */
+.mission-section {
+    background: var(--gradient-dark);
+}
+
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl);
+    text-align: center;
+}
+
+.mission-icon {
+    font-size: 4rem;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-lg);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.mission-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+}
+
+/* Core Values Section */
+.values-section {
+    background: var(--color-bg-secondary);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.value-card {
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-glow);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.value-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.value-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Facility Section */
+.facility-section {
+    background: var(--gradient-dark);
+}
+
+.facility-content {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto 0;
+    text-align: center;
+}
+
+.facility-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+}
+
+/* Business Section */
+.business-section {
+    background: var(--color-bg-secondary);
+}
+
+.business-content {
+    padding: var(--spacing-2xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.business-item {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.business-item h4 {
+    color: var(--color-accent-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.125rem;
+}
+
+.business-item p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .story-icon {
+        font-size: 3.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .business-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .mission-content,
+    .business-content {
+        padding: var(--spacing-xl);
+    }
+}
