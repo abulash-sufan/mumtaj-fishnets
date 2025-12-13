@@ -13,19 +13,8 @@ const Footer = () => {
                         <h3 className="footer-title">Mumtaj Fish Nets</h3>
                         <p className="footer-description">
                             Since 2016, we've been the most trusted manufacturer of specialized
-                            Monofilament and Nylon Fishing Nets in Kanyakumari.
+                            Monofilament Fishnets. Empowering women through sustainable employment.
                         </p>
-                        <div className="footer-social">
-                            <a href="#" className="social-link" aria-label="Facebook">
-                                <FaFacebook />
-                            </a>
-                            <a href="#" className="social-link" aria-label="Instagram">
-                                <FaInstagram />
-                            </a>
-                            <a href="#" className="social-link" aria-label="LinkedIn">
-                                <FaLinkedin />
-                            </a>
-                        </div>
                     </div>
 
                     <div className="footer-section">
@@ -39,42 +28,32 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="footer-section">
-                        <h4 className="footer-heading">Products</h4>
-                        <ul className="footer-links">
-                            <li><Link to="/products/monofilament">Monofilament Fishnet</Link></li>
-                            <li><Link to="/products/nylon">Nylon Multi Filament Net</Link></li>
-                            <li><Link to="/products/fishing-line">Fishing Line</Link></li>
-                            <li><Link to="/products">All Products</Link></li>
-                        </ul>
-                    </div>
+                    {/* Service Area Removed */}
 
                     <div className="footer-section">
                         <h4 className="footer-heading">Contact Info</h4>
                         <ul className="footer-contact">
                             <li>
                                 <FaPhone />
-                                <a href="tel:+919876543210">+91-98765 43210</a>
+                                <div>
+                                    <a href="tel:+919048592004">+91 90485 92004</a><br />
+                                    <a href="tel:+919025526472">+91 90255 26472</a>
+                                </div>
                             </li>
                             <li>
                                 <FaEnvelope />
-                                <a href="mailto:sales@mumtajfishnets.com">sales@mumtajfishnets.com</a>
+                                <a href="mailto:mumtajfishnets@gmail.com">mumtajfishnets@gmail.com</a>
                             </li>
                             <li>
                                 <FaMapMarkerAlt />
-                                <span>Nagercoil, Kanyakumari<br />Tamil Nadu - 629001</span>
+                                <span>Mumtaj Fishnet<br />Nagercoil, Kanyakumari</span>
                             </li>
                         </ul>
-                        <div className="footer-trade">
-                            <p><strong>GST:</strong> 33GEDPM4412P1ZA</p>
-                            <p><strong>HSN:</strong> 5608, 560811</p>
-                        </div>
                     </div>
                 </div>
 
                 <div className="footer-bottom">
                     <p>&copy; {currentYear} Mumtaj Fish Nets. All rights reserved.</p>
-                    <p className="footer-tagline">Casting a wider net of quality</p>
                 </div>
             </div>
         </footer>

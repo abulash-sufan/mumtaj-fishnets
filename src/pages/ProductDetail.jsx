@@ -50,8 +50,8 @@ const ProductDetail = () => {
                                 <p className="price-note">{product.priceNote}</p>
                             </div>
                             <div className="product-cta">
-                                <a href="tel:+919876543210" className="btn btn-primary btn-large">
-                                    <FaPhone /> Call for Quote
+                                <a href="tel:+919048592004" className="btn btn-primary btn-large">
+                                    <FaPhone /> Call for Pricing
                                 </a>
                                 <Link to="/contact" className="btn btn-secondary btn-large">
                                     Request Details

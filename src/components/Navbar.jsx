@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaPhone } from 'react-icons/fa';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -34,8 +34,8 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <span className="logo-text">Mumtaj</span>
-          <span className="logo-subtitle">Fish Nets</span>
+          <img src="/src/assets/images/logo.png" alt="Mumtaj Fish Nets Logo" className="navbar-logo-img" />
+          <span className="logo-text">Mumtaj Fish Nets</span>
         </Link>
 
         <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
@@ -48,7 +48,12 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <a href="tel:+919876543210" className="navbar-cta btn btn-primary">
+
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
+
+          <a href="tel:+919048592004" className="navbar-cta btn btn-primary">
             <FaPhone /> Call Now
           </a>
         </div>

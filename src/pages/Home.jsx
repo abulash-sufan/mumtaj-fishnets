@@ -34,36 +34,41 @@ const Home = () => {
                 <div className="container">
                     <div className="intro-content">
                         <h2 className="section-title">
-                            9 Years of <span className="text-gradient">Commitment to Quality</span>
+                            Empowering Communities, <span className="text-gradient">Delivering Quality</span>
                         </h2>
                         <p className="intro-text">
-                            Since 2016, Mumtaj Fish Nets has been at the forefront of fishing net manufacturing
-                            in Kanyakumari. Our unwavering commitment to quality, resilience, and innovation has
-                            made us the most trusted partner for fishing professionals across Tamil Nadu and beyond.
+                            Mumtaj Fish Nets is a proud women-led enterprise, founded by women entrepreneurs with a vision to transform the fishing net industry.
+                            With a workforce comprising more than 90% women, we are dedicated to empowerment, skill development, and community upliftment.
                         </p>
                         <p className="intro-text">
-                            We take pride in supporting the local fishing economy by delivering superior products
-                            that maximize yield, ensure safety, and stand the test of time in the most challenging
-                            marine conditions.
+                            We deliver export-quality Monofilament Fishnets across Pan India, ensuring that our products meet the highest standards of durability and performance.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* Why Choose Us */}
+            {/* Women Empowerment & Why Choose Us */}
             <section className="section why-choose-section">
                 <div className="container">
                     <h2 className="section-title text-center">
                         Why Choose <span className="text-gradient">Mumtaj Fish Nets?</span>
                     </h2>
                     <div className="usps-grid">
-                        {usps.map((usp, index) => (
-                            <div key={index} className="usp-card glass-card">
-                                <div className="usp-icon">{usp.icon}</div>
-                                <h3 className="usp-title">{usp.title}</h3>
-                                <p className="usp-description">{usp.description}</p>
-                            </div>
-                        ))}
+                        <div className="usp-card glass-card">
+                            <div className="usp-icon"><FaCertificate /></div>
+                            <h3 className="usp-title">Women Led & Powered</h3>
+                            <p className="usp-description">Founded by women entrepreneurs, with over 90% of our workforce being women.</p>
+                        </div>
+                        <div className="usp-card glass-card">
+                            <div className="usp-icon"><FaAnchor /></div>
+                            <h3 className="usp-title">Pan India Service</h3>
+                            <p className="usp-description">Delivering high-quality fishnets to every corner of India.</p>
+                        </div>
+                        <div className="usp-card glass-card">
+                            <div className="usp-icon"><FaCheckCircle /></div>
+                            <h3 className="usp-title">Community Upliftment</h3>
+                            <p className="usp-description">Committed to skill development and empowering local communities.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -74,7 +79,7 @@ const Home = () => {
                     <h2 className="section-title text-center">
                         Our <span className="text-gradient">Featured Products</span>
                     </h2>
-                    <div className="products-grid">
+                    <div className="products-grid centered">
                         {featuredProducts.map((product) => (
                             <ProductCard
                                 key={product.id}
@@ -100,8 +105,8 @@ const Home = () => {
                             Our expert team is ready to help you maximize your catch with premium quality nets.
                         </p>
                         <div className="cta-buttons">
-                            <a href="tel:+919876543210" className="btn btn-primary btn-large">
-                                <FaPhone /> Call +91-98765 43210
+                            <a href="tel:+919048592004" className="btn btn-primary btn-large">
+                                <FaPhone /> Call Now
                             </a>
                             <a href="/contact" className="btn btn-secondary btn-large">
                                 Get a Quote

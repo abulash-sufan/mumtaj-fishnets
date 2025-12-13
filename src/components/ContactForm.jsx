@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { FaPaperPlane } from 'react-icons/fa';
 import './ContactForm.css';
 
@@ -60,35 +59,28 @@ const ContactForm = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            // EmailJS configuration
-            // You'll need to replace these with actual EmailJS credentials
-            const serviceId = 'service_mumtaj'; // Replace with your EmailJS service ID
-            const templateId = 'template_contact'; // Replace with your EmailJS template ID
-            const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+            const formElement = e.target;
+            const formDataToSend = new FormData(formElement);
 
-            const templateParams = {
-                from_name: formData.name,
-                from_mobile: formData.mobile,
-                from_email: formData.email || 'Not provided',
-                message: formData.message,
-                to_email: 'abulashsufan123@gmail.com'
-            };
-
-            // For now, we'll simulate the email sending
-            // Uncomment the line below when you have EmailJS credentials
-            // await emailjs.send(serviceId, templateId, templateParams, publicKey);
-
-            // Simulated success (remove this when using real EmailJS)
-            await new Promise(resolve => setTimeout(resolve, 1000));
-
-            setStatus({
-                type: 'success',
-                message: 'Thank you! Your message has been sent successfully. We will contact you soon.'
+            const response = await fetch('https://formsubmit.co/abulashsufan@gmail.com', {
+                method: 'POST',
+                body: formDataToSend,
+                headers: {
+                    'Accept': 'application/json'
+                }
             });
 
-            setFormData({ name: '', mobile: '', email: '', message: '' });
+            if (response.ok) {
+                setStatus({
+                    type: 'success',
+                    message: 'Thank you! Your message has been sent successfully. We will contact you soon.'
+                });
+                setFormData({ name: '', mobile: '', email: '', message: '' });
+            } else {
+                throw new Error('Form submission failed');
+            }
         } catch (error) {
-            console.error('Email send error:', error);
+            console.error('Form submission error:', error);
             setStatus({
                 type: 'error',
                 message: 'Sorry, there was an error sending your message. Please try calling us directly.'
@@ -100,7 +92,13 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-wrapper">
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form
+                onSubmit={handleSubmit}
+                className="contact-form"
+            >
+                {/* Hidden fields for FormSubmit configuration */}
+                <input type="hidden" name="_captcha" value="false" />
+
                 <div className="form-group">
                     <label htmlFor="name" className="form-label">
                         Name <span className="required">*</span>

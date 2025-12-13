@@ -125,40 +125,12 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Business Details */}
+            {/* Business Details Removed */
+            /*
             <section className="section business-section">
-                <div className="container">
-                    <div className="business-content glass-card">
-                        <h2 className="section-title text-center">Business Details</h2>
-                        <div className="business-grid">
-                            <div className="business-item">
-                                <h4>Legal Status</h4>
-                                <p>Proprietorship</p>
-                            </div>
-                            <div className="business-item">
-                                <h4>Location</h4>
-                                <p>Nagercoil, Kanyakumari<br />Tamil Nadu - 629001</p>
-                            </div>
-                            <div className="business-item">
-                                <h4>GST Number</h4>
-                                <p>33GEDPM4412P1ZA</p>
-                            </div>
-                            <div className="business-item">
-                                <h4>HSN Codes</h4>
-                                <p>5608, 560811</p>
-                            </div>
-                            <div className="business-item">
-                                <h4>Year Established</h4>
-                                <p>2016</p>
-                            </div>
-                            <div className="business-item">
-                                <h4>Service Area</h4>
-                                <p>Tamil Nadu, Kerala & Pan India</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ... removed ...
             </section>
+            */}
         </div>
     );
 };

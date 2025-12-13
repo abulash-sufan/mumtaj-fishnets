@@ -1,8 +1,8 @@
 import './Map.css';
 
 const Map = () => {
-    // Nagercoil, Kanyakumari coordinates
-    const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125786.77537110847!2d77.35089!3d8.17953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f0c3c3c3c3c3%3A0x3b04f0c3c3c3c3c3!2sNagercoil%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1733167171000!5m2!1sen!2sin";
+    // Mumtaj Fishnet, Nagercoil coordinates
+    const mapSrc = "https://maps.google.com/maps?q=8.1476367,77.3871075&z=15&output=embed";
 
     return (
         <div className="map-wrapper">

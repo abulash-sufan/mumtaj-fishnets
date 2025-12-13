@@ -17,9 +17,9 @@ const Hero = () => {
                         in Kanyakumari. Built for the harsh marine environments of the Bay
                         of Bengal and Arabian Sea.
                     </p>
-                    <div className="hero-cta">
-                        <a href="tel:+919876543210" className="btn btn-primary btn-large">
-                            <FaPhone /> Call +91-98765 43210 for Bulk Quote
+                    <div className="hero-buttons fade-in" style={{ animationDelay: '0.4s' }}>
+                        <a href="tel:+919048592004" className="btn btn-primary btn-large">
+                            <FaPhone /> Call Now
                         </a>
                         <a href="/products" className="btn btn-secondary btn-large">
                             View Products

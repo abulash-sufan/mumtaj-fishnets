@@ -25,9 +25,16 @@
 
 .navbar-logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    /* Tighter gap */
     text-decoration: none;
     transition: transform var(--transition-fast);
+}
+
+.navbar-logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .navbar-logo:hover {
@@ -36,21 +43,13 @@
 
 .logo-text {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 800;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1;
-}
-
-.logo-subtitle {
-    font-size: 0.75rem;
-    color: var(--color-text-secondary);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-top: 0.25rem;
 }
 
 .navbar-menu {
@@ -87,6 +86,23 @@
 .navbar-link:hover::after,
 .navbar-link.active::after {
     width: 100%;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius-full);
+    transition: background-color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-bg-tertiary);
 }
 
 .navbar-cta {
