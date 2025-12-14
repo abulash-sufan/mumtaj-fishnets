@@ -88,7 +88,8 @@
     animation: fadeIn 1s ease-out 0.2s backwards;
 }
 
-.hero-cta {
+.hero-cta,
+.hero-buttons {
     display: flex;
     gap: var(--spacing-md);
     justify-content: center;
@@ -112,9 +113,17 @@
         padding-top: 60px;
     }
 
-    .hero-cta {
-        flex-direction: column;
-        align-items: stretch;
+    .hero-cta,
+    .hero-buttons {
+        gap: var(--spacing-sm);
+        justify-content: center;
+    }
+
+    .hero-cta .btn,
+    .hero-buttons .btn {
+        flex: 0 1 auto;
+        font-size: 0.9rem;
+        padding: 0.75rem 1.25rem;
     }
 
     .hero-badge {

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FloatingCallButton from './components/FloatingCallButton';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      <FloatingCallButton />
       <Footer />
     </div>
   );

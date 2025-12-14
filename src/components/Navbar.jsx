@@ -40,6 +40,14 @@ const Navbar = ({ theme, toggleTheme }) => {
         </Link>
 
         <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
+          <button
+            className="drawer-close"
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+          >
+            <FaTimes />
+          </button>
+
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -49,23 +57,21 @@ const Navbar = ({ theme, toggleTheme }) => {
               {link.name}
             </Link>
           ))}
+        </div>
 
+        <div className="navbar-right-controls">
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
 
-          <a href="tel:+919048592004" className="navbar-cta btn btn-primary">
-            <FaPhone /> Call Now
-          </a>
+          <button
+            className="navbar-toggle"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
-
-        <button
-          className="navbar-toggle"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
       </div>
     </nav>
   );

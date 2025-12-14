@@ -109,6 +109,16 @@
     margin-left: var(--spacing-sm);
 }
 
+.navbar-right-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.drawer-close {
+    display: none;
+}
+
 .navbar-toggle {
     display: none;
     background: transparent;
@@ -143,6 +153,30 @@
         right: 0;
     }
 
+    .drawer-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        background: var(--color-bg-tertiary);
+        border: none;
+        color: var(--color-text-primary);
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        border-radius: var(--radius-full);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+    }
+
+    .drawer-close:hover {
+        background: var(--color-accent-primary);
+        color: var(--color-bg-primary);
+        transform: rotate(90deg);
+    }
+
     .navbar-link {
         font-size: 1.25rem;
     }
@@ -154,5 +188,10 @@
 
     .navbar-toggle {
         display: block;
+    }
+
+    /* Keep theme toggle visible on mobile, not in drawer */
+    .navbar-right-controls .theme-toggle {
+        display: flex;
     }
 }
