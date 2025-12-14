@@ -1,4 +1,5 @@
 // Product catalog data for Mumtaj Fish Nets
+import productImage from '../assets/images/product-1.jpg';
 
 export const products = [
     {
@@ -7,7 +8,7 @@ export const products = [
         shortDescription: 'High-quality synthetic nets offering low visibility and maximum strength',
         description: 'Premium monofilament fishing nets engineered for superior performance in both shallow and deep sea operations. These nets feature low visibility underwater, minimal water resistance, and exceptional durability.',
         featured: true,
-        image: '/src/assets/images/product-1.jpg',
+        image: productImage,
         features: [
             'Low visibility underwater',
             'Maximum tensile strength',

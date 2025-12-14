@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './Gallery.css';
+import product1 from '../assets/images/product-1.jpg';
+import product2 from '../assets/images/product-2.jpg';
+import product3 from '../assets/images/product-3.jpg';
+import factory from '../assets/images/factory.png';
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -8,25 +12,25 @@ const Gallery = () => {
     const galleryImages = [
         {
             id: 1,
-            src: '/src/assets/images/product-1.jpg',
+            src: product1,
             alt: 'Monofilament Fishnet Bundles',
             category: 'products'
         },
         {
             id: 2,
-            src: '/src/assets/images/product-2.jpg',
+            src: product2,
             alt: 'Yellow Monofilament Nets',
             category: 'products'
         },
         {
             id: 3,
-            src: '/src/assets/images/product-3.jpg',
+            src: product3,
             alt: 'Green Fishing Nets',
             category: 'products'
         },
         {
             id: 4,
-            src: '/src/assets/images/factory.png',
+            src: factory,
             alt: 'Manufacturing Facility',
             category: 'facility'
         }

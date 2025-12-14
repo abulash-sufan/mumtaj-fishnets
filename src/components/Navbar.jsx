@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaPhone } from 'react-icons/fa';
 import './Navbar.css';
+import logo from '../assets/images/logo.png';
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/src/assets/images/logo.png" alt="Mumtaj Fish Nets Logo" className="navbar-logo-img" />
+          <img src={logo} alt="Mumtaj Fish Nets Logo" className="navbar-logo-img" />
           <span className="logo-text">Mumtaj Fish Nets</span>
         </Link>
 
