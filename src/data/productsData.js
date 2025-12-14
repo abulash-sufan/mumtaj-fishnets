@@ -25,10 +25,9 @@ export const products = [
         ],
         specifications: {
             material: 'Premium Monofilament Nylon',
-            colors: ['All Customizable'],
-            meshSizes: '10mm to 50mm',
-            twineSize: '0.4mm to 2.0mm',
-            treatment: 'UV Stabilized, Anti-Rot',
+            colors: ['Any Color'],
+            meshSizes: '10mm to 300mm',
+            twineSize: '0.16mm to 0.50mm',
             customization: 'Available in various depths and lengths'
         },
         delivery: 'Across India'
