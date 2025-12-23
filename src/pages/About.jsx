@@ -31,7 +31,7 @@ const About = () => {
             <section className="about-hero">
                 <div className="container">
                     <h1 className="page-title">
-                        About <span className="text-gradient">Mumtaj Fish Nets</span>
+                        About <span className="text-gradient">Mumtaj Fish Nets – Fishnets Manufacturer in Tamil Nadu</span>
                     </h1>
                     <p className="page-subtitle">
                         Casting a wider net of quality since 2016
@@ -49,18 +49,10 @@ const About = () => {
                         <div className="story-text">
                             <h2 className="section-title">Our Story</h2>
                             <p className="story-paragraph">
-                                Established in <strong>2016</strong>, Mumtaj Fish Nets was born from a vision to
-                                provide the fishing community of Kanyakumari with nets that could withstand the
-                                harsh marine environments of the Bay of Bengal and Arabian Sea.
+                                Established in <strong>2016</strong>, Mumtaj Fish Nets began with a mission to manufacture durable fishnets for the fishing community of Kanniyakumari. Located at the southern coastal tip of Tamil Nadu, our nets are engineered to withstand the challenging conditions of the Bay of Bengal and Arabian Sea.
                             </p>
                             <p className="story-paragraph">
-                                Over the past 9 years, we've grown from a small local manufacturer to the most
-                                trusted name in specialized fishing nets across Tamil Nadu. Our journey has been
-                                guided by one simple motto: <em>"Casting a wider net of quality."</em>
-                            </p>
-                            <p className="story-paragraph">
-                                Today, we continue to serve fishermen and fishing businesses with the same
-                                dedication and commitment to excellence that defined our first day in business.
+                                Over the years, we have grown from a local manufacturing unit into a trusted fishnets and monofilament supplier across Tamil Nadu and India. Our commitment to quality, consistency, and ethical business practices has made us a preferred choice among fishermen and fishing businesses.
                             </p>
                         </div>
                     </div>
@@ -76,13 +68,7 @@ const About = () => {
                         </div>
                         <h2 className="section-title">Our Mission</h2>
                         <p className="mission-text">
-                            To deliver superior, long-lasting fishing gear that maximizes yield and safety for
-                            our customers, maintaining strict quality standards from raw material selection to
-                            finished product delivery.
-                        </p>
-                        <p className="mission-text">
-                            We are committed to innovation, sustainability, and supporting the livelihoods of
-                            fishing professionals through products they can trust in the most challenging conditions.
+                            To manufacture and supply high-quality fishnets and monofilament fishing nets that enhance fishing efficiency, safety, and yield for fishermen across India.
                         </p>
                     </div>
                 </div>
@@ -114,12 +100,7 @@ const About = () => {
                     </h2>
                     <div className="facility-content">
                         <p className="facility-text">
-                            Our small, dedicated team operates from our main manufacturing unit in Kanyakumari,
-                            leveraging efficient, modern manufacturing techniques to deliver consistent quality.
-                        </p>
-                        <p className="facility-text">
-                            Every member of our team brings expertise and passion to their work, ensuring that
-                            each net meets our exacting standards before it reaches your hands.
+                            Our manufacturing unit in Kanniyakumari, Tamil Nadu is equipped to produce precision-mesh monofilament nets used across coastal fishing regions of India. Our skilled team ensures strict quality checks at every stage of production.
                         </p>
                     </div>
                 </div>

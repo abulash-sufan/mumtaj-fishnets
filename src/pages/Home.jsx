@@ -34,14 +34,16 @@ const Home = () => {
                 <div className="container">
                     <div className="intro-content">
                         <h2 className="section-title">
-                            Empowering Communities, <span className="text-gradient">Delivering Quality</span>
+                            Trusted Fishnets Manufacturer & <span className="text-gradient">Monofilament Supplier in India</span>
                         </h2>
                         <p className="intro-text">
-                            Mumtaj Fish Nets is a proud women-led enterprise, founded by women entrepreneurs with a vision to transform the fishing net industry.
-                            With a workforce comprising more than 90% women, we are dedicated to empowerment, skill development, and community upliftment.
+                            Mumtaj Fish Nets is a proud women-led enterprise and a trusted manufacturer of high-quality fishnets and monofilament fishing nets in India. Based in Kanniyakumari, Tamil Nadu, we specialize in precision-manufactured fishing nets designed for durability, strength, and performance in demanding marine environments.
                         </p>
                         <p className="intro-text">
-                            We deliver export-quality Monofilament Fishnets across Pan India, ensuring that our products meet the highest standards of durability and performance.
+                            We deliver export-quality monofilament fishnets across Pan India, supporting coastal fisheries, commercial fishing operations, and traditional fishermen with reliable and long-lasting net solutions.
+                        </p>
+                        <p className="intro-text">
+                            With over 9 years of experience, our focus remains on consistent quality, ethical manufacturing, and empowering communities through sustainable employment.
                         </p>
                     </div>
                 </div>
@@ -56,18 +58,18 @@ const Home = () => {
                     <div className="usps-grid">
                         <div className="usp-card glass-card">
                             <div className="usp-icon"><FaCertificate /></div>
-                            <h3 className="usp-title">Women Led & Powered</h3>
-                            <p className="usp-description">Founded by women entrepreneurs, with over 90% of our workforce being women.</p>
+                            <h3 className="usp-title">Women-Led Manufacturer</h3>
+                            <p className="usp-description">Founded and operated by women entrepreneurs with over 90% women workforce.</p>
                         </div>
                         <div className="usp-card glass-card">
                             <div className="usp-icon"><FaAnchor /></div>
-                            <h3 className="usp-title">Pan India Service</h3>
-                            <p className="usp-description">Delivering high-quality fishnets to every corner of India.</p>
+                            <h3 className="usp-title">Pan India Fishnet Supply</h3>
+                            <p className="usp-description">Reliable supply of fishnets and monofilaments across India, including Tamil Nadu and coastal regions.</p>
                         </div>
                         <div className="usp-card glass-card">
                             <div className="usp-icon"><FaCheckCircle /></div>
-                            <h3 className="usp-title">Community Upliftment</h3>
-                            <p className="usp-description">Committed to skill development and empowering local communities.</p>
+                            <h3 className="usp-title">Built for Indian Marine Conditions</h3>
+                            <p className="usp-description">Designed for the Bay of Bengal and Arabian Sea fishing environments.</p>
                         </div>
                     </div>
                 </div>
@@ -79,6 +81,9 @@ const Home = () => {
                     <h2 className="section-title text-center">
                         Our <span className="text-gradient">Featured Products</span>
                     </h2>
+                    <p className="section-description text-center" style={{ marginBottom: '2rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+                        Explore our range of monofilament fishnets and fishing nets widely used by fishermen across India.
+                    </p>
                     <div className="products-grid centered">
                         {featuredProducts.map((product) => (
                             <ProductCard
@@ -99,10 +104,9 @@ const Home = () => {
             <section className="section cta-section">
                 <div className="container">
                     <div className="cta-content glass-card">
-                        <h2 className="cta-title">Ready to Outfit Your Fleet?</h2>
+                        <h2 className="cta-title">Looking for Reliable Fishnets in India?</h2>
                         <p className="cta-text">
-                            Contact us today for customized net solutions tailored to your specific fishing needs.
-                            Our expert team is ready to help you maximize your catch with premium quality nets.
+                            Contact Mumtaj Fish Nets today for premium monofilament fishing nets, customized to your fishing requirements and delivered anywhere in India.
                         </p>
                         <div className="cta-buttons">
                             <a href="tel:+919048592004" className="btn btn-primary btn-large">

@@ -10,10 +10,10 @@ const Contact = () => {
             <section className="contact-hero">
                 <div className="container">
                     <h1 className="page-title">
-                        Get in <span className="text-gradient">Touch</span>
+                        Fishnets & Monofilament Supplier in <span className="text-gradient">Kanniyakumari</span>
                     </h1>
                     <p className="page-subtitle">
-                        We're here to help with your fishing net requirements
+                        Serving fishermen across Kanniyakumari, Tamil Nadu, and India
                     </p>
                 </div>
             </section>
@@ -61,6 +61,17 @@ const Contact = () => {
                 </div>
             </section>
 
+            {/* Address Paragraph Section */}
+            <section className="section address-section">
+                <div className="container">
+                    <div className="glass-card" style={{ padding: '2rem', textAlign: 'center' }}>
+                        <p style={{ fontSize: '1.1rem', lineHeight: '1.8', margin: 0 }}>
+                            Mumtaj Fish Nets is a trusted manufacturer and supplier of fishnets and monofilament fishing nets in Kanniyakumari. From our facility in Nagercoil, we supply high-quality fishing nets to local fishermen, coastal operations across Tamil Nadu, and customers throughout India.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* Contact Form & Map */}
             <section className="section form-map-section">
                 <div className="container">
@@ -78,6 +89,28 @@ const Contact = () => {
                                 Visit our facility in Nagercoil, Kanyakumari.
                             </p>
                             <Map />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Local FAQ Section */}
+            <section className="section faq-section">
+                <div className="container">
+                    <h2 className="section-title text-center" style={{ marginBottom: '2rem' }}>Frequently Asked Questions</h2>
+                    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                        <div className="glass-card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+                            <h3 style={{ marginBottom: '0.75rem', color: '#2c5282' }}>Do you supply fishnets in Kanniyakumari?</h3>
+                            <p style={{ margin: 0, lineHeight: '1.6' }}>Yes, we manufacture and supply fishnets directly from our Kanniyakumari facility to local fishermen and businesses.</p>
+                        </div>
+                        <div className="glass-card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+                            <h3 style={{ marginBottom: '0.75rem', color: '#2c5282' }}>Do you deliver fishnets across Tamil Nadu and India?</h3>
+                            <p style={{ margin: 0, lineHeight: '1.6' }}>Yes, we supply monofilament fishnets across Tamil Nadu and offer Pan-India delivery.</p>
+                        </div>
+                        <div className="glass-card" style={{ padding: '1.5rem' }}>
+                            <h3 style={{ marginBottom: '0.75rem', color: '#2c5282' }}>Can I visit your manufacturing unit?</h3>
+                            <p style={{ margin: 0, lineHeight: '1.6' }}>Yes, our facility is located in Nagercoil, Kanniyakumari. Please contact us to schedule a visit.</p>
                         </div>
                     </div>
                 </div>

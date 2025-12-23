@@ -12,10 +12,22 @@ const Products = () => {
             <section className="products-hero">
                 <div className="container">
                     <h1 className="page-title">
-                        Our <span className="text-gradient">Products</span>
+                        Fishnets & <span className="text-gradient">Monofilament Nets Supplied Across Tamil Nadu</span>
                     </h1>
                     <p className="page-subtitle">
-                        Premium fishing nets and lines crafted with precision for maximum performance
+                        Premium fishing nets manufactured in Kanniyakumari for coastal and commercial fishing
+                    </p>
+                </div>
+            </section>
+
+            {/* Products Intro Section */}
+            <section className="section products-intro-section">
+                <div className="container">
+                    <p className="section-description" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.8' }}>
+                        At Mumtaj Fish Nets, we manufacture and supply a wide range of monofilament fishnets used across Tamil Nadu's coastal fishing regions. Our products are designed to meet the requirements of small-scale fishermen as well as large fishing operations.
+                    </p>
+                    <p className="section-description" style={{ textAlign: 'center', maxWidth: '900px', margin: '1rem auto 0', fontSize: '1.1rem', lineHeight: '1.8' }}>
+                        From Kanniyakumari to major fishing hubs across Tamil Nadu, our nets are trusted for strength, precision mesh, and long operational life.
                     </p>
                 </div>
             </section>
@@ -43,11 +55,9 @@ const Products = () => {
             <section className="section custom-cta-section">
                 <div className="container">
                     <div className="custom-cta glass-card">
-                        <h2 className="cta-title">Can't Find Your Specification?</h2>
+                        <h2 className="cta-title">Custom Fishnets Manufacturing in Tamil Nadu</h2>
                         <p className="cta-text">
-                            We offer custom net manufacturing services tailored to your exact requirements.
-                            Whether you need specific mesh sizes, colors, depths, or materials, our expert
-                            team can create the perfect solution for your fishing needs.
+                            We offer custom-made monofilament fishing nets with specific mesh sizes, depths, colors, and materials, manufactured at our Kanniyakumari facility and supplied across Tamil Nadu and India.
                         </p>
                         <div className="cta-buttons">
                             <a href="tel:+919048592004" className="btn btn-primary btn-large">

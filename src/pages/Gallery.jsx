@@ -13,25 +13,25 @@ const Gallery = () => {
         {
             id: 1,
             src: product1,
-            alt: 'Monofilament Fishnet Bundles',
+            alt: 'Monofilament fishnets manufactured in Kanniyakumari Tamil Nadu',
             category: 'products'
         },
         {
             id: 2,
             src: product2,
-            alt: 'Yellow Monofilament Nets',
+            alt: 'Fishing nets supplied across Tamil Nadu coastal regions',
             category: 'products'
         },
         {
             id: 3,
             src: product3,
-            alt: 'Green Fishing Nets',
+            alt: 'Premium monofilament fishing nets from Kanniyakumari',
             category: 'products'
         },
         {
             id: 4,
             src: factory,
-            alt: 'Manufacturing Facility',
+            alt: 'Fishnet manufacturing unit in Kanniyakumari',
             category: 'facility'
         }
     ];
@@ -50,10 +50,10 @@ const Gallery = () => {
             <section className="gallery-hero">
                 <div className="container">
                     <h1 className="page-title">
-                        Our <span className="text-gradient">Gallery</span>
+                        Fishnets Manufacturing & Supply Gallery
                     </h1>
                     <p className="page-subtitle">
-                        Explore our products, facility, and manufacturing process
+                        Monofilament fishnets manufactured in Tamil Nadu and supplied across India
                     </p>
                 </div>
             </section>

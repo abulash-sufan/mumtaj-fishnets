@@ -44,6 +44,9 @@ const ProductDetail = () => {
                         </div>
                         <div className="product-info-section">
                             <h1 className="product-title">{product.name}</h1>
+                            <p className="product-description" style={{ marginBottom: '1rem', fontWeight: '500', color: '#2c5282' }}>
+                                This monofilament fishing net is manufactured at our Kanniyakumari facility and supplied across Tamil Nadu and India. Designed for durability and precision, it is suitable for coastal and commercial fishing operations in Indian marine conditions.
+                            </p>
                             <p className="product-description">{product.description}</p>
                             <div className="product-price-box">
                                 <div className="price">{product.price}</div>
@@ -81,6 +84,9 @@ const ProductDetail = () => {
             <section className="section applications-section">
                 <div className="container">
                     <h2 className="section-title">Applications</h2>
+                    <p className="section-description" style={{ marginBottom: '1.5rem', textAlign: 'center' }}>
+                        Widely used by fishermen across Tamil Nadu and other coastal regions of India.
+                    </p>
                     <div className="applications-grid">
                         {product.applications.map((application, index) => (
                             <div key={index} className="application-item glass-card">
@@ -129,6 +135,9 @@ const ProductDetail = () => {
                             <div>
                                 <h3>Delivery Information</h3>
                                 <p>{product.delivery}</p>
+                                <p style={{ marginTop: '0.5rem', fontStyle: 'italic' }}>
+                                    We offer reliable delivery of our fishnets and monofilaments across India, with quick dispatch from Tamil Nadu.
+                                </p>
                             </div>
                         </div>
                     </div>
